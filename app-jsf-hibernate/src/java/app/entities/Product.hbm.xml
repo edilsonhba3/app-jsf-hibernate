@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-30-2018 03:17:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="app.entities.Product" table="PRODUCT" schema="EDILSON" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="100" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="PRICE" precision="52" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
